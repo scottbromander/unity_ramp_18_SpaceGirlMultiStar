@@ -3,37 +3,24 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class Player : MonoBehaviour {
-	public Image starImage;
-	public Sprite iconStar;
-	public Sprite iconNoStar;
-	private bool carryingStar = false;
+	public Text starText;
+	private int totalStars = 0;
 
-	//From other file where we were practicing MVC
-	//private PlayerInventoryDisplay playerInventoryDisplay;
-
-
-	//Once again, used for the MVC structure, but not used here.
-	// Use this for initialization
-	//void Start () {
-		//playerInventoryDisplay = GetComponent<PlayerInventoryDisplay> ();
-		//playerInventoryDisplay.OnChangeCarryingStar (carryingStar);
-	//}
+	void Start () {
+		UpdateStarText ();
+	}
 
 	void OnTriggerEnter2D(Collider2D hit){
 		if(hit.CompareTag("Star")){
-			carryingStar = true;
-			//playerInventoryDisplay.OnChangeCarryingStar (carryingStar);
-			UpdateStarImage();
+			totalStars++;
+			UpdateStarText ();
 			Destroy (hit.gameObject);
 		}
 	}
 	
 
-	void UpdateStarImage () {
-		if (carryingStar) {
-			starImage.sprite = iconStar;
-		} else {
-			starImage.sprite = iconNoStar;
-		}
+	void UpdateStarText () {
+		string starMessage = "stars = " + totalStars;
+		starText.text = starMessage;
 	}
 }

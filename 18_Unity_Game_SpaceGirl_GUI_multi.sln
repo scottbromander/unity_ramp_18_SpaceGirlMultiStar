@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{ABBE6F75-AC1D-88D1-235E-DD4B1CA7A3AD}") = "18_Unity_Game_SpaceGirl_GUI_multi", "Assembly-CSharp.csproj", "{3A9EE3F4-9E13-503B-51C8-49A0BCC67C62}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A9EE3F4-9E13-503B-51C8-49A0BCC67C62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A9EE3F4-9E13-503B-51C8-49A0BCC67C62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A9EE3F4-9E13-503B-51C8-49A0BCC67C62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A9EE3F4-9E13-503B-51C8-49A0BCC67C62}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
